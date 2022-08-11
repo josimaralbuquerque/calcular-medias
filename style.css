@@ -127,9 +127,18 @@ td > input{
     font-weight: 700;
     background-color: rgba(0, 0, 0, 0.075);
 }
+tbody th{
+    padding: 0 10px;
+}
 tbody th img{
     width: 16px;
     display: inline-block;
+}
+tbody th button:hover{
+    background-color: rgb(216, 107, 129);
+    transition: .3s;
+    border: 2px solid black;
+    border-radius:3px ;
 }
 section > label {
     display: block;
