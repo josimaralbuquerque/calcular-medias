@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Josimar Albuquerque">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="corpo">
+    <header><h1>Agilize o processo de calculo de médias com nossa tabela</h1></header>
+    <section>
+        <h2>Vamos começar:</h2>
+        <h3>Se estiver em um dispositivo movel(celuar ou tablete), rotacione a tela para mais conforto<img src="imgs/rotalão-tela.png"></h3>
+        <div id="tabela">
+            <table>
+                <caption><input type="text"></caption>
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="3">Alunos</th>
+                        <th scope="colgroup" colspan="8">1<sup>o</sup> Semestre</th>
+            
+                        <th scope="colgroup" colspan="8">2<sup>o</sup> Semestre</th>
+                        <th scope="col" rowspan="3">Recuperação Final</th>
+                        <th scope="col" rowspan="3">Média Anual</th>
+                    </tr>
+                    <tr>
+                        <th scope="colgroup" colspan="3">1<sup>o</sup>Bimestre</th>
+            
+                        <th scope="colgroup" colspan="3">2<sup>o</sup>Bimestre</th>
+                      <th scope="col" rowspan="2">Recuperação</th>
+                      <th scope="col" rowspan="2">Média</th>
+            
+                        <th scope="colgroup" colspan="3">3<sup>o</sup>Bimestre</th>
+                        <th scope="colgroup" colspan="3">4<sup>o</sup>Bimestre</th>
+                   <th scope="col" rowspan="2">Recuperação</th>
+                            <th scope="col" rowspan="2">Média</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">1<sup>o</sup>Nota</th>
+                        <th scope="col">2<sup>o</sup>Nota</th>
+                        <th scope="col">Média</th>
+                        <th scope="col">3<sup>o</sup>Nota</th>
+                        <th scope="col">4<sup>o</sup>Nota</th>
+                        <th scope="col" >Média</th>
+                        <th scope="col">5<sup>o</sup>Nota</th>
+                        <th scope="col">6<sup>o</sup>Nota</th>
+                        <th scope="col" >Média</th>
+                        <th scope="col">7<sup>o</sup>Nota</th>
+                        <th scope="col">8<sup>o</sup>Nota</th>
+                        <th scope="col">Média</th>
+                    </tr>
+                </thead>
+                <tbody name="tbody" id="tbody">
+                </tbody>
+            </table>
+        </div>
+        <label for="adc">Adicione um Aluno<sup>(a)</sup>:<input type="text" name="anome" id="anome" maxlength="50"><button name="adc" id="adc" onclick="adcAluno()">Adicionar</button></label>
+        
+        
+        
+    </section>
+    <footer>
+        <p>Dev por traz do projeto:
+    <a target="_blank" class="github" href="https://github.com/josimaralbuquerque"><img src="imgs/icone-github.png" alt="Link GitHub"></a> 
+
+    <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/josimar-da-silva-albuquerque-b4a287248/"><img src="imgs/icone-linkedin.png" alt="Link Linkedin"></a>
+                
+    <a target="_blank" class="instagram" href="https://www.instagram.com/josimar.albuquerque_/"><img src="imgs/icone-instagram.png" alt="Link instagram"></a>
+
+                </p>
+            
+    </footer>
+    <script src="media.js"></script>
+</body>
+</html>
