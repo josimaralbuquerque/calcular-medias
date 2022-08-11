@@ -129,6 +129,7 @@ td > input{
 }
 tbody th{
     padding: 0 10px;
+    min-width: 25vw;
 }
 tbody th img{
     width: 16px;

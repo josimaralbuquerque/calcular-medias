@@ -19,7 +19,7 @@ let cnome= String(nome.value.split(" ").join("-"))
         var th = document.createElement('th')
         th.setAttribute('scope','row') 
         tr.appendChild(th)
-        let tnome = document.createTextNode(cnome)
+        let tnome = document.createTextNode(nome.value)
         th.appendChild(tnome)
         let button = document.createElement('button')
         th.appendChild( button)
@@ -167,7 +167,7 @@ if((Number(nota5.value) + Number(nota6.value) +Number(nota7.value) + Number(nota
 
 } 
 
-    if((Number(res2sem) + Number(res1sem) )/2 < 6 && recupfinal.value > 0){
+    if((Number(res2sem) + Number(res1sem) )/2 < 6 && recupfinal.value > (Number(res2sem) + Number(res1sem) )/2 ){
             mediatotal.innerHTML=( ((((res2sem + res1sem )/2) + Number(recupfinal.value))) /2).toFixed(2)
                 
 
