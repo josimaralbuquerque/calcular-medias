@@ -37,7 +37,7 @@ let cnome= String(nome.value.split(" ").join("-"))
                 input.setAttribute('min', `0`)
                 input.setAttribute('max', `10`)
                 input.setAttribute('step', `0.25`)
-                input.setAttribute('onclick', `calcu('${cnome}')`)
+                input.setAttribute('onblur', `calcu('${cnome}')`)
             }
        
             
@@ -115,7 +115,9 @@ function calcu(a){
 // vars da media final
         let recupfinal = document.querySelector(`tr.${a} input.n17`)
         let mediatotal = document.querySelector(`tr.${a} > td.c18`)
-    
+
+
+
         if((Number(nota1.value) + Number(nota2.value) +Number(nota3.value) + Number(nota4.value)) /4 < 6){
                 if(Number(recup1.value) > (Number(nota1.value) + Number(nota2.value))/2 || Number(recup1.value) >  (Number(nota3.value) + Number(nota4.value))/2  ){
                         if((Number(nota1.value) + Number(nota2.value)) >= (Number(nota3.value) + Number(nota4.value)) ){
@@ -174,5 +176,8 @@ if((Number(nota5.value) + Number(nota6.value) +Number(nota7.value) + Number(nota
     }else{
         mediatotal.innerHTML= ((res2sem + res1sem )/2).toFixed(2)
     }
-}
+
+    }
+
+
 
