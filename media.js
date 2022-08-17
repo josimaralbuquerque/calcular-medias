@@ -37,7 +37,8 @@ let cnome= String(nome.value.split(" ").join("-"))
                 input.setAttribute('min', `0`)
                 input.setAttribute('max', `10`)
                 input.setAttribute('step', `0.25`)
-                input.setAttribute('onblur', `calcu('${cnome}')`)
+                input.setAttribute('onkeyup', `calcu('${cnome}')`)
+                input.setAttribute('onclick', `calcu('${cnome}')`)
             }
        
             
